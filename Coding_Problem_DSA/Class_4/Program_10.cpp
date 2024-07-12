@@ -1,12 +1,10 @@
 //  Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
-
+// yaha hum printing krwani h next code 11 me humne return karwaya h
  
  #include<iostream>
- #include<string>
  using namespace std;
  
-
-   void Generate(string abtk,int open ,int close ){
+  void Generate(string abtk,int open ,int close ){
      if(open==0 && close==0){
         cout<<abtk<<endl;
      }
@@ -14,7 +12,7 @@
         Generate(abtk+"(",open-1,close);
 
      }
-     if(close>0&& open<close){
+     if(close>0&& open<close){              
         Generate(abtk+")",open,close-1);
      }
 
