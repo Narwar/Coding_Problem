@@ -1,0 +1,1 @@
+//  print all the subset eg [1,2,3]
