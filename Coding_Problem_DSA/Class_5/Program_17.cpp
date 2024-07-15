@@ -1,12 +1,10 @@
 //  Letter Combinations of a Phone Number
 // Link-: https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/i
 
-
-
 #include<iostream>
 using namespace std;
 
-   void Generate(int index,string input,string output, string map[]){
+    void Generate(int index,string input,string output, string map[]){
         
         if(index == input.size()){
           cout<<output<<endl;
@@ -22,13 +20,7 @@ using namespace std;
                     Generate(index+1,input,output+val[i],map);
                 }
             }
-        
-
-
-   }
-
-
-
+         }
 
 int main(){
    string map[]={"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
